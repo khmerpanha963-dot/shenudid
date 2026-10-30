@@ -9,6 +9,7 @@ import secrets
 from datetime import datetime, timezone
 from urllib.parse import urlparse
 
+
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", secrets.token_hex(32))
 
